@@ -14,6 +14,7 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | --- | --- |
 | Distra | [OMetaVR/Distra](https://github.com/OMetaVR/Distra) |
 | uYouEnhanced | [OMetaVR/uYouPlus](https://github.com/OMetaVR/uYouPlus) |
+| EeveeSpotify | [OMetaVR/EeveeSpotify](https://github.com/OMetaVR/EeveeSpotify) |
 
 ## How it works
 

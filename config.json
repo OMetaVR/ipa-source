@@ -51,6 +51,21 @@
       "category": "entertainment",
       "screenshots": [],
       "entitlements": []
+    },
+    {
+      "repo": "OMetaVR/EeveeSpotify",
+      "asset": "EeveeSpotify_*_sideload.ipa",
+      "includePrereleases": false,
+      "name": "EeveeSpotify",
+      "bundleIdentifier": "com.spotify.client",
+      "developerName": "SideloadLabs (built by OMetaVR)",
+      "subtitle": "Spotify with Premium features, lyrics and Liquid Glass UI",
+      "localizedDescription": "EeveeSpotify (Reincarnated), the continuation of whoeevee's EeveeSpotify: unlocks Premium-only playback features in Spotify, adds custom lyrics providers, and an optional iOS 26 Liquid Glass interface.\n\nThis is the sideload build (with zxPluginsInject) for SideStore, AltStore and LiveContainer. A TrollStore build and jailbreak .debs are on each release at github.com/OMetaVR/EeveeSpotify.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/spotify.png",
+      "tintColor": "#1DB954",
+      "category": "entertainment",
+      "screenshots": [],
+      "entitlements": []
     }
   ]
 }
