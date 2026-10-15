@@ -15,6 +15,16 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | Distra | [OMetaVR/Distra](https://github.com/OMetaVR/Distra) |
 | uYouEnhanced | [OMetaVR/uYouPlus](https://github.com/OMetaVR/uYouPlus) |
 | EeveeSpotify | [OMetaVR/EeveeSpotify](https://github.com/OMetaVR/EeveeSpotify) |
+| Feather | [OMetaVR/feather](https://github.com/OMetaVR/feather) |
+| iTorrent | [OMetaVR/iTorrent](https://github.com/OMetaVR/iTorrent) |
+| Apollo Reborn | [OMetaVR/Apollo-Reborn](https://github.com/OMetaVR/Apollo-Reborn) |
+| TwitchAdBlock | [OMetaVR/TwitchAdBlock](https://github.com/OMetaVR/TwitchAdBlock) |
+| YTMusicUltimate | [OMetaVR/YTMusicUltimate](https://github.com/OMetaVR/YTMusicUltimate) |
+| SCMusicPlus | [OMetaVR/scmusicplus](https://github.com/OMetaVR/scmusicplus) |
+| BHTikTok | [OMetaVR/BHTikTok](https://github.com/OMetaVR/BHTikTok) |
+| BHTwitter | [OMetaVR/BHTwitter](https://github.com/OMetaVR/BHTwitter) |
+
+Forks are built by the shared [ipa-pipeline](https://github.com/OMetaVR/ipa-pipeline); [Un-JailedSpeedAds](https://github.com/OMetaVR/Un-JailedSpeedAds) is built there too but only ships `.deb`s and a dylib, so it isn't in the source.
 
 ## How it works
 
