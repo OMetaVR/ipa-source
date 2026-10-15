@@ -1,0 +1,39 @@
+{
+  "source": {
+    "name": "OMetaVR's Apps",
+    "identifier": "io.github.ometavr.source",
+    "subtitle": "Custom builds and forks by OMetaVR",
+    "description": "IPAs I build myself, served straight from each project's GitHub releases.",
+    "iconURL": "https://ometavr.github.io/ipa-source/icons/distra.png",
+    "website": "https://github.com/OMetaVR/ipa-source",
+    "tintColor": "#5865F2",
+    "featuredApps": ["com.hammerandchisel.discord"]
+  },
+  "apps": [
+    {
+      "repo": "OMetaVR/Distra",
+      "asset": "Distra.ipa",
+      "includePrereleases": false,
+      "name": "Distra",
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "OMetaVR",
+      "subtitle": "Discord with Vendetta, Bunny/Revenge and Enmity plugin support",
+      "localizedDescription": "Discord mod for iOS: runs Vendetta, Bunny/Revenge, Enmity and Aliucord plugins, ships ~100 built-in plugins (all off by default), icon packs and app icons. Includes crash-loop protection with an automatic safe mode.\n\nUnofficial modification, not affiliated with Discord. Client mods break Discord's Terms of Service; use at your own risk.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/distra.png",
+      "tintColor": "#5865F2",
+      "category": "social",
+      "screenshots": [],
+      "entitlements": [
+        "aps-environment",
+        "com.apple.developer.associated-domains",
+        "com.apple.security.application-groups",
+        "com.apple.developer.usernotifications.communication",
+        "com.apple.developer.avfoundation.multitasking-camera-access",
+        "com.apple.developer.networking.carrier-constrained.appcategory",
+        "com.apple.developer.devicecheck.appattest-environment",
+        "com.apple.developer.storekit.request-data",
+        "com.apple.developer.declared-age-range"
+      ]
+    }
+  ]
+}

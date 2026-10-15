@@ -1,0 +1,70 @@
+{
+  "name": "OMetaVR's Apps",
+  "identifier": "io.github.ometavr.source",
+  "subtitle": "Custom builds and forks by OMetaVR",
+  "description": "IPAs I build myself, served straight from each project's GitHub releases.",
+  "iconURL": "https://ometavr.github.io/ipa-source/icons/distra.png",
+  "website": "https://github.com/OMetaVR/ipa-source",
+  "tintColor": "#5865F2",
+  "featuredApps": [
+    "com.hammerandchisel.discord"
+  ],
+  "apps": [
+    {
+      "name": "Distra",
+      "bundleIdentifier": "com.hammerandchisel.discord",
+      "developerName": "OMetaVR",
+      "subtitle": "Discord with Vendetta, Bunny/Revenge and Enmity plugin support",
+      "localizedDescription": "Discord mod for iOS: runs Vendetta, Bunny/Revenge, Enmity and Aliucord plugins, ships ~100 built-in plugins (all off by default), icon packs and app icons. Includes crash-loop protection with an automatic safe mode.\n\nUnofficial modification, not affiliated with Discord. Client mods break Discord's Terms of Service; use at your own risk.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/distra.png",
+      "tintColor": "#5865F2",
+      "category": "social",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "348.0",
+          "buildVersion": "113691",
+          "date": "2026-10-14T23:52:08Z",
+          "localizedDescription": "Distra 0.1.0\n\nThe first full release of Distra, a Discord mod for iOS. Built and tested against **Discord 348.0 (113691)**.\n\n> [!WARNING]\n> Unofficial modification, not affiliated with Discord. Client mods break Discord's Terms of Service; use at your own risk. Plugins run with full access to your account: only enable what you understand.\n\n## Downloads\n\n| File | For |\n| --- | --- |\n| **Distra.ipa** | Discord 348.0 with Distra injected, for sideloading (AltStore, SideStore, Sideloadly, TrollStore…). Includes the Plumpy and Iconsax icon packs from rosiecord. |\n| **Distra.dylib** | Inject into Discord yourself (LiveContainer, IPA patchers). No Substrate needed. |\n| **…iphoneos-arm.deb** / **…iphoneos-arm64.deb** | Rootful / rootless jailbreak packages. |\n| distra.js | The JS bundle on its own (already embedded in all of the above). |\n\nIPAs are only published with full releases; the rolling [beta](https://github.com/OMetaVR/Distra/releases/tag/beta) has the dylib and .debs.\n\n## What's in it\n\n- Runs plugins written for **Vendetta**, **Bunny/Revenge**, **Enmity** and **Aliucord**, managed from a Distra section in Discord's own settings.\n- **98 built-in plugins**, all off until you turn them on in *Settings > Distra > Plugin Library*:\n  - 5 of Distra's own: **Message Logger** (deleted messages and edit history, greyed-out deleted images), **Platform Indicators**, **Radial Status**, **Hide Chat Buttons** (with swipe to collapse) and **Fake Nitro**.\n  - 93 community plugins, pinned to their upstream source and patched for Discord 348. Each was enabled and checked on a device alongside the others; results are in [docs/PLUGIN_TESTING.md](https://github.com/OMetaVR/Distra/blob/main/docs/PLUGIN_TESTING.md).\n- Icon packs and extra app icons.\n- Crash-loop protection with an automatic safe mode, an on-device log viewer (three-finger long press), and a remote debugger for development.\n\n## Known limits\n\n- Only Discord 348.0 is supported. Other versions may load but plugin fixes target 348.\n- Themes are not supported yet (planned).\n- Some plugins have open issues; the Plugin Library marks them, and [PLUGIN_TESTING.md](https://github.com/OMetaVR/Distra/blob/main/docs/PLUGIN_TESTING.md) lists what each one was checked for.\n\nDistra is licensed under GPL-3.0-or-later. Built-in plugins keep their own licenses; credits in [builtin-plugins/README.md](https://github.com/OMetaVR/Distra/blob/main/builtin-plugins/README.md).",
+          "downloadURL": "https://github.com/OMetaVR/Distra/releases/download/v0.1.0/Distra.ipa",
+          "size": 116876312,
+          "sha256": "396cc4360925383f854a704bde3b37749977b5e939dadafc64e030ab41069153",
+          "minOSVersion": "16.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "aps-environment",
+          "com.apple.developer.associated-domains",
+          "com.apple.security.application-groups",
+          "com.apple.developer.usernotifications.communication",
+          "com.apple.developer.avfoundation.multitasking-camera-access",
+          "com.apple.developer.networking.carrier-constrained.appcategory",
+          "com.apple.developer.devicecheck.appattest-environment",
+          "com.apple.developer.storekit.request-data",
+          "com.apple.developer.declared-age-range"
+        ],
+        "privacy": {
+          "NSBluetoothAlwaysUsageDescription": "To connect to your devices",
+          "NSBluetoothPeripheralUsageDescription": "To connect to your devices",
+          "NSCameraUsageDescription": "By allowing access to your camera, you can take pictures and others will be able to see you in voice and video calls.",
+          "NSContactsUsageDescription": "We can help you find people you know on Discord. Your contacts will be regularly sent to us so you can connect with friends. You can turn this off any time.",
+          "NSLocalNetworkUsageDescription": "Allow Discord access to your local network to find devices using the same internet connection.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "To enable services that require location",
+          "NSLocationAlwaysUsageDescription": "To enable services that require location",
+          "NSLocationWhenInUseUsageDescription": "To enable services that require location",
+          "NSMicrophoneUsageDescription": "By allowing access to your microphone, you'll be able to talk in calls.",
+          "NSPhotoLibraryAddUsageDescription": "By allowing access to your library, you'll be able to download photos and videos.",
+          "NSPhotoLibraryUsageDescription": "By allowing us access to your photos, you will be able to upload images as an avatar, server icon, and more, and you can send photos and videos to your friends and communities.",
+          "NSUserTrackingUsageDescription": "Allowing tracking helps us show you Quests for games you play or are interested in. You can opt out anytime in your iOS settings."
+        }
+      },
+      "version": "348.0",
+      "versionDate": "2026-10-14T23:52:08Z",
+      "versionDescription": "Distra 0.1.0\n\nThe first full release of Distra, a Discord mod for iOS. Built and tested against **Discord 348.0 (113691)**.\n\n> [!WARNING]\n> Unofficial modification, not affiliated with Discord. Client mods break Discord's Terms of Service; use at your own risk. Plugins run with full access to your account: only enable what you understand.\n\n## Downloads\n\n| File | For |\n| --- | --- |\n| **Distra.ipa** | Discord 348.0 with Distra injected, for sideloading (AltStore, SideStore, Sideloadly, TrollStore…). Includes the Plumpy and Iconsax icon packs from rosiecord. |\n| **Distra.dylib** | Inject into Discord yourself (LiveContainer, IPA patchers). No Substrate needed. |\n| **…iphoneos-arm.deb** / **…iphoneos-arm64.deb** | Rootful / rootless jailbreak packages. |\n| distra.js | The JS bundle on its own (already embedded in all of the above). |\n\nIPAs are only published with full releases; the rolling [beta](https://github.com/OMetaVR/Distra/releases/tag/beta) has the dylib and .debs.\n\n## What's in it\n\n- Runs plugins written for **Vendetta**, **Bunny/Revenge**, **Enmity** and **Aliucord**, managed from a Distra section in Discord's own settings.\n- **98 built-in plugins**, all off until you turn them on in *Settings > Distra > Plugin Library*:\n  - 5 of Distra's own: **Message Logger** (deleted messages and edit history, greyed-out deleted images), **Platform Indicators**, **Radial Status**, **Hide Chat Buttons** (with swipe to collapse) and **Fake Nitro**.\n  - 93 community plugins, pinned to their upstream source and patched for Discord 348. Each was enabled and checked on a device alongside the others; results are in [docs/PLUGIN_TESTING.md](https://github.com/OMetaVR/Distra/blob/main/docs/PLUGIN_TESTING.md).\n- Icon packs and extra app icons.\n- Crash-loop protection with an automatic safe mode, an on-device log viewer (three-finger long press), and a remote debugger for development.\n\n## Known limits\n\n- Only Discord 348.0 is supported. Other versions may load but plugin fixes target 348.\n- Themes are not supported yet (planned).\n- Some plugins have open issues; the Plugin Library marks them, and [PLUGIN_TESTING.md](https://github.com/OMetaVR/Distra/blob/main/docs/PLUGIN_TESTING.md) lists what each one was checked for.\n\nDistra is licensed under GPL-3.0-or-later. Built-in plugins keep their own licenses; credits in [builtin-plugins/README.md](https://github.com/OMetaVR/Distra/blob/main/builtin-plugins/README.md).",
+      "downloadURL": "https://github.com/OMetaVR/Distra/releases/download/v0.1.0/Distra.ipa",
+      "size": 116876312
+    }
+  ],
+  "news": []
+}
