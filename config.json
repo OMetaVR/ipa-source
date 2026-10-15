@@ -36,6 +36,21 @@
         "com.apple.developer.storekit.request-data",
         "com.apple.developer.declared-age-range"
       ]
+    },
+    {
+      "repo": "OMetaVR/uYouPlus",
+      "asset": "uYouEnhanced_*.ipa",
+      "includePrereleases": false,
+      "name": "uYouEnhanced",
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "arichornlover (built by OMetaVR)",
+      "subtitle": "YouTube with uYou, PiP, dislikes and more",
+      "localizedDescription": "uYouEnhanced, the continuation of uYouPlus: YouTube with uYou (background playback, downloads, no ads) plus a bundle of tweaks like YouPiP, Return YouTube Dislikes, DontEatMyContent, YouQuality and YTUHD options.\n\nBuilt automatically from upstream releases by github.com/OMetaVR/uYouPlus.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/youtube.png",
+      "tintColor": "#FF0000",
+      "category": "entertainment",
+      "screenshots": [],
+      "entitlements": []
     }
   ]
 }

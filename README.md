@@ -13,6 +13,7 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | App | Repo |
 | --- | --- |
 | Distra | [OMetaVR/Distra](https://github.com/OMetaVR/Distra) |
+| uYouEnhanced | [OMetaVR/uYouPlus](https://github.com/OMetaVR/uYouPlus) |
 
 ## How it works
 
@@ -20,12 +21,12 @@ IPAs stay in each project's own GitHub releases; nothing is re-uploaded here.
 
 - `config.json` holds the source details and one entry per app: its repo, the IPA asset name, and the metadata shown in the store.
 - `scripts/update_source.py` reads each repo's releases, downloads any IPA it hasn't seen yet, and takes the version, build number, minimum iOS version, size, SHA-256 and privacy strings from the IPA itself. It writes `source.json`.
-- The **Update source** workflow runs every 6 hours, whenever `config.json` or the script changes, and on demand (Actions → Update source → Run workflow). It commits `source.json` if anything changed.
+- The **Update source** workflow runs every hour, whenever `config.json` or the script changes, and on demand (Actions → Update source → Run workflow). It commits `source.json` if anything changed.
 
 ## Adding an app
 
 1. Publish a GitHub release with the `.ipa` attached in the app's repo.
-2. Add an entry to `apps` in `config.json` (copy the Distra one). `bundleIdentifier` must match the IPA's `CFBundleIdentifier`, and `asset` must be the exact file name on the release.
+2. Add an entry to `apps` in `config.json` (copy the Distra one). `bundleIdentifier` must match the IPA's `CFBundleIdentifier`, and `asset` is the file name on the release, or a glob like `MyApp_*.ipa` for versioned names.
 3. Add an icon to `icons/` and point `iconURL` at it.
 4. Push. The workflow fills in the versions.
 

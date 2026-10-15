@@ -2,7 +2,7 @@
 """Build source.json from config.json and each app's GitHub releases.
 
 For every app in config.json, the script looks at the repo's releases, takes the
-IPA asset named in "asset", and reads the version, build number, minimum iOS
+IPA asset matching "asset" (a file name or glob), and reads the version, build number, minimum iOS
 version and privacy strings straight from the IPA's Info.plist. Versions already
 in source.json are reused, so an IPA is only downloaded once.
 
@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import plistlib
+from fnmatch import fnmatch
 import re
 import sys
 import tempfile
@@ -71,7 +72,7 @@ def build_app(app, existing):
     for rel in releases(app["repo"]):
         if rel["draft"] or (rel["prerelease"] and not app.get("includePrereleases")):
             continue
-        asset = next((a for a in rel["assets"] if a["name"] == app["asset"]), None)
+        asset = next((a for a in rel["assets"] if fnmatch(a["name"], app["asset"])), None)
         if not asset:
             continue
         url = asset["browser_download_url"]
