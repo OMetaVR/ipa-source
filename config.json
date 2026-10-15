@@ -1,13 +1,15 @@
 {
   "source": {
-    "name": "OMetaVR's Apps",
+    "name": "Meta's Apps",
     "identifier": "io.github.ometavr.source",
     "subtitle": "Custom builds and forks by OMetaVR",
     "description": "IPAs I build myself, served straight from each project's GitHub releases.",
-    "iconURL": "https://ometavr.github.io/ipa-source/icons/distra.png",
+    "iconURL": "https://ometavr.github.io/ipa-source/icons/source.png",
     "website": "https://github.com/OMetaVR/ipa-source",
     "tintColor": "#5865F2",
-    "featuredApps": ["com.hammerandchisel.discord"]
+    "featuredApps": [
+      "com.hammerandchisel.discord"
+    ]
   },
   "apps": [
     {

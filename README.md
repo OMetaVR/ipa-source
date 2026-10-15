@@ -1,6 +1,6 @@
-# OMetaVR's IPA source
+# Meta's Apps
 
-A SideStore / AltStore / LiveContainer source for apps I build myself.
+A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaVR.
 
 **Source URL:** `https://ometavr.github.io/ipa-source/source.json`
 
