@@ -41,6 +41,36 @@ IPAs stay in each project's own GitHub releases; nothing is re-uploaded here.
 3. Add an icon to `icons/` and point `iconURL` at it.
 4. Push. The workflow fills in the versions.
 
+## Adding a tweak
+
+For a tweak that ships a dylib and/or .debs but no IPA:
+
+1. Publish a GitHub release with the files attached.
+2. Add an entry to `tweaks` in `config.json` (create the list if it's not there):
+
+   ```json
+   "tweaks": [
+     {
+       "repo": "OMetaVR/MyTweak",
+       "asset": "MyTweak.dylib",
+       "includePrereleases": false,
+       "name": "MyTweak",
+       "identifier": "com.ometavr.mytweak",
+       "targetApp": { "name": "Instagram", "bundleIdentifier": "com.burbn.instagram" },
+       "developerName": "OMetaVR",
+       "subtitle": "One line about what it does",
+       "localizedDescription": "Longer description.",
+       "iconURL": "https://ometavr.github.io/ipa-source/icons/mytweak.png",
+       "tintColor": "#E1306C",
+       "category": "social",
+       "minOSVersion": "15.0"
+     }
+   ]
+   ```
+
+   `asset` is the main file (a name or glob). The version is the release tag without a leading `v`. `targetApp` and `minOSVersion` are optional.
+3. Push. Tweaks are written to `source.json` under `tweaks`, which SideStore and AltStore ignore, so they don't appear there as installable apps. [mmeta.cloud/repo](https://mmeta.cloud/repo) lists them in their own section, with every file from the release (dylib, rootless/rootful/roothide .debs) in the download menu.
+
 To run it locally: `GITHUB_TOKEN=$(gh auth token) python3 scripts/update_source.py`
 
 ## Updates
