@@ -33,4 +33,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update source.json" source.json
-          git push
+          # Someone may have pushed to main while this ran; replay on top (keeping the
+          # freshly generated source.json if both changed it) and retry.
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase -X theirs
+          done
+          exit 1
