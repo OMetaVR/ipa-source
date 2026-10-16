@@ -13,8 +13,8 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | App | Repo |
 | --- | --- |
 | Distra | [OMetaVR/Distra](https://github.com/OMetaVR/Distra) |
-| uYouEnhanced | [OMetaVR/uYouPlus](https://github.com/OMetaVR/uYouPlus) |
-| EeveeSpotify | [OMetaVR/EeveeSpotify](https://github.com/OMetaVR/EeveeSpotify) |
+| uYouEnhanced | [OMetaVR/uYouEnhanced](https://github.com/OMetaVR/uYouEnhanced) |
+| EeveeSpotify | [OMetaVR/EeveeSpotifyReincarnated](https://github.com/OMetaVR/EeveeSpotifyReincarnated) |
 | Feather | [OMetaVR/feather](https://github.com/OMetaVR/feather) |
 | iTorrent | [OMetaVR/iTorrent](https://github.com/OMetaVR/iTorrent) |
 | Apollo Reborn | [OMetaVR/Apollo-Reborn](https://github.com/OMetaVR/Apollo-Reborn) |
@@ -22,7 +22,7 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | YTMusicUltimate | [OMetaVR/YTMusicUltimate](https://github.com/OMetaVR/YTMusicUltimate) |
 | SCMusicPlus | [OMetaVR/scmusicplus](https://github.com/OMetaVR/scmusicplus) |
 | BHTikTok | [OMetaVR/BHTikTok](https://github.com/OMetaVR/BHTikTok) |
-| BHTwitter | [OMetaVR/BHTwitter](https://github.com/OMetaVR/BHTwitter) |
+| NeoFreeBird | [OMetaVR/NeoFreeBird](https://github.com/OMetaVR/NeoFreeBird) |
 
 Forks are built by the shared [ipa-pipeline](https://github.com/OMetaVR/ipa-pipeline).
 
