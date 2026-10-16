@@ -187,5 +187,21 @@
       "screenshots": [],
       "entitlements": []
     }
+  ],
+  "tweaks": [
+    {
+      "repo": "OMetaVR/Un-JailedSpeedAds",
+      "asset": "adspeed-jailed_*.dylib",
+      "includePrereleases": false,
+      "name": "Un-JailedSpeedAds",
+      "identifier": "com.34306-sr.adspeed",
+      "developerName": "34306 & SoulRune (built by OMetaVR)",
+      "subtitle": "Blocks ads and speeds up reward-ad videos in any app",
+      "localizedDescription": "Ads Speed stubs out ads from the common ad SDKs (AdMob, AppLovin, ironSource, Meta, Vungle and more) and speeds up reward-ad videos so you still get the reward. Your normal in-app video is left alone.\n\nJailbroken (iOS 15+): install the rootless or rootful .deb, then choose which apps it runs in under Settings > Ads Speed. Nothing happens until you enable an app there.\n\nNot jailbroken: inject the dylib into an app's IPA. This build is always on and only speeds up web video ads, and it needs a substrate bundled in, so inject it with TrollStore + TrollFools, or Sideloadly with \"Cydia Substrate\" turned on.\n\nFork of SoulRune's Un-JailedSpeedAds.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/adspeed.png",
+      "tintColor": "#FF9F0A",
+      "category": "utilities",
+      "minOSVersion": "15.0"
+    }
   ]
 }

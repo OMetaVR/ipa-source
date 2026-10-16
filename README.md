@@ -24,7 +24,17 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | BHTikTok | [OMetaVR/BHTikTok](https://github.com/OMetaVR/BHTikTok) |
 | BHTwitter | [OMetaVR/BHTwitter](https://github.com/OMetaVR/BHTwitter) |
 
-Forks are built by the shared [ipa-pipeline](https://github.com/OMetaVR/ipa-pipeline); [Un-JailedSpeedAds](https://github.com/OMetaVR/Un-JailedSpeedAds) is built there too but only ships `.deb`s and a dylib, so it isn't in the source.
+Forks are built by the shared [ipa-pipeline](https://github.com/OMetaVR/ipa-pipeline).
+
+## Tweaks
+
+Listed on [mmeta.cloud/repo](https://mmeta.cloud/repo); SideStore and AltStore don't show tweaks.
+
+| Tweak | Repo |
+| --- | --- |
+| Un-JailedSpeedAds | [OMetaVR/Un-JailedSpeedAds](https://github.com/OMetaVR/Un-JailedSpeedAds) |
+
+Tweaks ship `.deb`s and/or a dylib but no IPA, and are built by the same pipeline.
 
 ## How it works
 
@@ -68,7 +78,7 @@ For a tweak that ships a dylib and/or .debs but no IPA:
    ]
    ```
 
-   `asset` is the main file (a name or glob). The version is the release tag without a leading `v`. `targetApp` and `minOSVersion` are optional.
+   `asset` is the main file (a name or glob). The version is taken from the file name (`MyTweak_1.2.0.dylib`), or the release tag without a leading `v` if the name has none. `targetApp` and `minOSVersion` are optional.
 3. Push. Tweaks are written to `source.json` under `tweaks`, which SideStore and AltStore ignore, so they don't appear there as installable apps. [mmeta.cloud/repo](https://mmeta.cloud/repo) lists them in their own section, with every file from the release (dylib, rootless/rootful/roothide .debs) in the download menu.
 
 To run it locally: `GITHUB_TOKEN=$(gh auth token) python3 scripts/update_source.py`

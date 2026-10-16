@@ -9,7 +9,8 @@ in source.json are reused, so an IPA is only downloaded once.
 Tweaks (a dylib and/or .debs with no IPA) go in a separate "tweaks" list. They
 are written to source.json under "tweaks", which SideStore and AltStore ignore,
 so they never show up there as installable apps; mmeta.cloud/repo lists them.
-Their version comes from the release tag and nothing is downloaded.
+Their version comes from the asset's file name (falling back to the release
+tag) and nothing is downloaded.
 
 Set GITHUB_TOKEN to avoid API rate limits. Standard library only.
 """
@@ -122,6 +123,13 @@ def build_app(app, existing):
     return out
 
 
+def tweak_version(asset_name, tag):
+    """The version in the file name (adspeed_2.2.1.2.dylib -> 2.2.1.2), which is
+    what the package itself says; otherwise the release tag without a leading v."""
+    m = re.search(r"[_-]v?(\d+(?:\.\d+)+)(?=[_.])", asset_name)
+    return m.group(1) if m else re.sub(r"^v(?=\d)", "", tag)
+
+
 def build_tweak(tweak, existing):
     versions = []
     for rel in releases(tweak["repo"]):
@@ -131,7 +139,7 @@ def build_tweak(tweak, existing):
         if not asset:
             continue
         version = {
-            "version": re.sub(r"^v(?=\d)", "", rel["tag_name"]),
+            "version": tweak_version(asset["name"], rel["tag_name"]),
             "date": rel["published_at"],
             "localizedDescription": changelog(rel),
             "downloadURL": asset["browser_download_url"],
