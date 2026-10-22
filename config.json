@@ -186,6 +186,21 @@
       "category": "social",
       "screenshots": [],
       "entitlements": []
+    },
+    {
+      "repo": "OMetaVR/DiOShonored",
+      "asset": "DiOShonored-shell.ipa",
+      "includePrereleases": true,
+      "name": "DiOShonored",
+      "bundleIdentifier": "dev.dios.dishonored",
+      "developerName": "OMetaVR",
+      "subtitle": "Dishonored (2012) on iPhone, from your own copy of the PC game",
+      "localizedDescription": "Runs the Steam release of Dishonored natively on iPhone: a static recompiler, a Windows compatibility layer and a Direct3D 9 to Metal renderer with MetalFX upscaling. Not an emulator.\n\nRequires your own copy of Dishonored for PC on Steam and a game controller. Copy your game folder into the app's folder in Files; the app checks the files against the supported Steam build. The playable build is made from your own game files with the build instructions at github.com/OMetaVR/DiOShonored.\n\nEarly beta: tested on an iPhone 13 with a Backbone One so far.\n\nUnofficial fan project, not affiliated with Arkane Studios, Bethesda Softworks or ZeniMax Media. Contains no game code or data.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/dishonored.png",
+      "tintColor": "#8A6D3B",
+      "category": "games",
+      "screenshots": [],
+      "entitlements": []
     }
   ],
   "tweaks": [

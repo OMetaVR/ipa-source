@@ -23,6 +23,7 @@ A SideStore / AltStore / LiveContainer source for apps I build myself, by OMetaV
 | SCMusicPlus | [OMetaVR/scmusicplus](https://github.com/OMetaVR/scmusicplus) |
 | BHTikTok | [OMetaVR/BHTikTok](https://github.com/OMetaVR/BHTikTok) |
 | NeoFreeBird | [OMetaVR/NeoFreeBird](https://github.com/OMetaVR/NeoFreeBird) |
+| DiOShonored | [OMetaVR/DiOShonored](https://github.com/OMetaVR/DiOShonored) |
 
 Forks are built by the shared [ipa-pipeline](https://github.com/OMetaVR/ipa-pipeline).
 
