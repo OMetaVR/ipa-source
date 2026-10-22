@@ -406,6 +406,48 @@
       "versionDescription": "NeoFreeBird 7.2.0 (X 12.35)\n\nBuilt from upstream [`v7.2.0`](https://github.com/NeoFreeBird/app/releases/tag/v7.2.0) + this fork's changes (`8f420d836621500e4113b2c4412abd4c243a188b`), injected into **X 12.35**.\n\n| File | For |\n| --- | --- |\n| `NeoFreeBird-sideloaded-Twitter_*.ipa` | SideStore, AltStore, LiveContainer, with Twitter branding and icons |\n| `NeoFreeBird-sideloaded-X_*.ipa` | Same, keeping X branding |\n| `NeoFreeBird-trollstore-*.tipa` | TrollStore |\n| `*_iphoneos-arm64.deb` / `*_iphoneos-arm.deb` | Rootless / rootful jailbreak |\n\nAlso available through the [Meta's Apps source](https://ometavr.github.io/ipa-source/source.json).\n\n---\n\n<details><summary>Upstream release notes</summary>\n\n# Version 7.2.0\n\n## New Features\n- Added an option to choose the default reply sort\n- Updated X to 12.33\n- Added an option to hide retweets and quotes from the “For You” page\n- Added option to convert [t.co](http://t.co/) links and remove link tracking by @PEEKPerformer in https://github.com/NeoFreeBird/app/pull/135\n- Updated NFB settings to use the new settings design. You now hold the bird (or X) on the For You page to access NFB settings\n- Brought back the Tweet source labels!\n- Removed the “Money” tab\n- Enabling the option to hide views now also hides it in the tweet footer.\n\n## Fixes\n- Fixed more webview issues\n- NeoFreeBird now more reliably filters out video ads\n- Fixed hiding both the “Follow” and “Message” button on tweets by @sekiranunn in https://github.com/NeoFreeBird/app/pull/140\n- Tweaked the wording of the “Reply in web view” option to highlight it’s a fallback by @PEEKPerformer in https://github.com/NeoFreeBird/app/pull/138\n- Added localization support for the “Show quote numbers option”\n- Fixed the app crashing when adding more than 1 account\n\n## Localizations\n* Update Japanese localization for in-app browser text by @so-5699 in https://github.com/NeoFreeBird/app/pull/130\n* Update French localization by @jleroy in https://github.com/NeoFreeBird/app/pull/132\n* Update Japanese localization for reply sorting options by @so-5699 in https://github.com/NeoFreeBird/app/pull/136\n* Update Arabic localization by @ipapplus in https://github.com/NeoFreeBird/app/pull/139\n* Update Turkish localization by @Huseyin-Korkmaz in https://github.com/NeoFreeBird/app/pull/142\n\n## New Contributors\n* @so-5699 made their first contribution in https://github.com/NeoFreeBird/app/pull/130\n* @jleroy made their first contribution in https://github.com/NeoFreeBird/app/pull/132\n* @PEEKPerformer made their first contribution in https://github.com/NeoFreeBird/app/pull/135\n* @ipapplus made their first contribution in https://github.com/NeoFreeBird/app/pull/139\n* @Huseyin-Korkmaz made their first contribution in https://github.com/NeoFreeBird/app/pull/142\n* @sekiranunn made their first contribution in https://github.com/NeoFreeBird/app/pull/140\n\n**Full Changelog**: https://github.com/NeoFreeBird/app/compare/v7.1.1...v7.2.0\n\n</details>",
       "downloadURL": "https://github.com/OMetaVR/NeoFreeBird/releases/download/v7.2.0-x12.35/NeoFreeBird-sideloaded-Twitter_7.2.0_12.35.ipa",
       "size": 266648791
+    },
+    {
+      "name": "DiOShonored",
+      "bundleIdentifier": "dev.dios.dishonored",
+      "developerName": "OMetaVR",
+      "subtitle": "Dishonored (2012) on iPhone, from your own copy of the PC game",
+      "localizedDescription": "Runs the Steam release of Dishonored natively on iPhone: a static recompiler, a Windows compatibility layer and a Direct3D 9 to Metal renderer with MetalFX upscaling. Not an emulator.\n\nRequires your own copy of Dishonored for PC on Steam and a game controller. Copy your game folder into the app's folder in Files; the app checks the files against the supported Steam build. The playable build is made from your own game files with the build instructions at github.com/OMetaVR/DiOShonored.\n\nEarly beta: tested on an iPhone 13 with a Backbone One so far.\n\nUnofficial fan project, not affiliated with Arkane Studios, Bethesda Softworks or ZeniMax Media. Contains no game code or data.",
+      "iconURL": "https://ometavr.github.io/ipa-source/icons/dishonored.png",
+      "tintColor": "#8A6D3B",
+      "category": "games",
+      "screenshots": [],
+      "versions": [
+        {
+          "version": "0.1",
+          "buildVersion": "1",
+          "date": "2026-10-22T23:31:22Z",
+          "localizedDescription": "v0.1.0-beta.2\n\n**Beta: early testing.** Expect bugs, stutter and missing features; see the README's *Status* and *Known issues*.\n\n`DiOShonored-shell.ipa` is the **app shell**: the runtime, the Metal renderer and the import screen, with no game code or\ndata inside. On its own it shows the \"import your game files\" screen. To play, build the playable app from **your own copy**\nof Dishonored (Steam, PC) as described in the README under *Build the playable app*. Nothing from the game is distributed here.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Arkane Studios, Bethesda Softworks or ZeniMax Media.",
+          "downloadURL": "https://github.com/OMetaVR/DiOShonored/releases/download/v0.1.0-beta.2/DiOShonored-shell.ipa",
+          "size": 1510879,
+          "sha256": "1dc1c707d0a786e361d720c2f920a7f4fdfb575353c00d5af9868ec06db3190e",
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.1",
+          "buildVersion": "1",
+          "date": "2026-10-22T22:05:49Z",
+          "localizedDescription": "v0.1.0-beta.1\n\n**Beta: early testing.** Expect bugs, stutter and missing features; see the README's *Status* and *Known issues*.\n\n`DiOShonored-shell.ipa` is the **app shell**: the runtime, the Metal renderer and the import screen, with no game code or\ndata inside. On its own it shows the \"import your game files\" screen. To play, build the playable app from **your own copy**\nof Dishonored (Steam, PC) as described in the README under *Build the playable app*. Nothing from the game is distributed here.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Arkane Studios, Bethesda Softworks or ZeniMax Media.",
+          "downloadURL": "https://github.com/OMetaVR/DiOShonored/releases/download/v0.1.0-beta.1/DiOShonored-shell.ipa",
+          "size": 1508085,
+          "sha256": "dfa139481990560a30da1f53754f6021bb0e3018a6be1b79fab1180d1303c4ff",
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "version": "0.1",
+      "versionDate": "2026-10-22T23:31:22Z",
+      "versionDescription": "v0.1.0-beta.2\n\n**Beta: early testing.** Expect bugs, stutter and missing features; see the README's *Status* and *Known issues*.\n\n`DiOShonored-shell.ipa` is the **app shell**: the runtime, the Metal renderer and the import screen, with no game code or\ndata inside. On its own it shows the \"import your game files\" screen. To play, build the playable app from **your own copy**\nof Dishonored (Steam, PC) as described in the README under *Build the playable app*. Nothing from the game is distributed here.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Arkane Studios, Bethesda Softworks or ZeniMax Media.",
+      "downloadURL": "https://github.com/OMetaVR/DiOShonored/releases/download/v0.1.0-beta.2/DiOShonored-shell.ipa",
+      "size": 1510879
     }
   ],
   "tweaks": [
