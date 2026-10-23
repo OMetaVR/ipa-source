@@ -411,21 +411,21 @@
       "name": "DiOShonored",
       "bundleIdentifier": "dev.dios.dishonored",
       "developerName": "OMetaVR",
-      "subtitle": "Dishonored (2012) on iPhone, from your own copy of the PC game",
-      "localizedDescription": "Runs the Steam release of Dishonored natively on iPhone: a static recompiler, a Windows compatibility layer and a Direct3D 9 to Metal renderer with MetalFX upscaling. Not an emulator.\n\nRequires your own copy of Dishonored for PC on Steam and a game controller. Copy your game folder into the app's folder in Files; the app checks the files against the supported Steam build. The playable build is made from your own game files with the build instructions at github.com/OMetaVR/DiOShonored.\n\nEarly beta: tested on an iPhone 13 with a Backbone One so far.\n\nUnofficial fan project, not affiliated with Arkane Studios, Bethesda Softworks or ZeniMax Media. Contains no game code or data.",
+      "subtitle": "Dishonored (2012) on iPhone, from your own copy of the PC game!",
+      "localizedDescription": "Runs the Steam release of Dishonored natively on iPhone: a static recompiler, a Windows compatibility layer and a Direct3D 9 to Metal renderer with MetalFX upscaling. Not an emulator.\n\nRequires your own copy of Dishonored for PC on Steam and a game controller. Copy your game folder into the app's folder in Files; the app checks the files against the supported Steam build. The build can be made from your own game files with the build instructions at github.com/OMetaVR/DiOShonored.\n\nEarly beta: tested on an iPhone 13 with a Backbone One so far.\n\nUnofficial fan project, not affiliated with Arkane Studios, Bethesda Softworks or ZeniMax Media.",
       "iconURL": "https://ometavr.github.io/ipa-source/icons/dishonored.png",
       "tintColor": "#8A6D3B",
       "category": "games",
-      "screenshots": [],
+      "screenshots": [https://cdn.discordapp.com/attachments/465046297372786708/1562978437289746522/IMG_7472.png?ex=6adbf49a&is=6adaa31a&hm=114e14b44706a4c2cf71f31a397656d3cfa63d16107219fe199079f9c0b2ec9d&animated=true,https://media.discordapp.net/attachments/1170543031468965999/1562934703101579358/IMG_7464.png?ex=6adbcbdf&is=6ada7a5f&hm=dcbcf59a8b60a7538915763e3fb33915f9fb5ff5cd475ccd32a4c90710c08710&animated=true&width=2279&height=1053,https://media.discordapp.net/attachments/1170543031468965999/1562934705513439232/IMG_7469.png?ex=6adbcbdf&is=6ada7a5f&hm=620d929c8d82704c72401e97e5fe20c0190eefe3b9d1cf738aaaaa58602a34dd&animated=true&width=2279&height=1053],
       "versions": [
         {
           "version": "0.1",
           "buildVersion": "1",
           "date": "2026-10-22T23:31:22Z",
-          "localizedDescription": "v0.1.0-beta.2\n\n**Beta: early testing.** Expect bugs, stutter and missing features; see the README's *Status* and *Known issues*.\n\n`DiOShonored-shell.ipa` is the **app shell**: the runtime, the Metal renderer and the import screen, with no game code or\ndata inside. On its own it shows the \"import your game files\" screen. To play, build the playable app from **your own copy**\nof Dishonored (Steam, PC) as described in the README under *Build the playable app*. Nothing from the game is distributed here.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Arkane Studios, Bethesda Softworks or ZeniMax Media.",
-          "downloadURL": "https://github.com/OMetaVR/DiOShonored/releases/download/v0.1.0-beta.2/DiOShonored-shell.ipa",
-          "size": 1510879,
-          "sha256": "1dc1c707d0a786e361d720c2f920a7f4fdfb575353c00d5af9868ec06db3190e",
+          "localizedDescription": "v0.1.0-beta.2\n\n**Beta: early testing.** Expect possible bugs and definite occasional stutters; see the README's *Status* and *Known issues*.\n\n`DiOShonored-shell.ipa` from the source repo is the **app shell**: the runtime, the Metal renderer and the import screen, with no game code or\ndata inside. On its own it shows the \"import your game files\" screen. To play, build the playable app from **your own copy**\nof Dishonored (Steam, PC) as described in the README under *Build the playable app*.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Arkane Studios, Bethesda Softworks or ZeniMax Media.",
+          "downloadURL": "https://github.com/CalebWD/release-gate/releases/download/Dev13/DiOShonored.ipa",
+          "size": 33902102,
+          "sha256": "233a173fb9285087c29993d56104357919267adaa16140e5da5cd0751adf61d9",
           "minOSVersion": "15.0"
         },
         {
